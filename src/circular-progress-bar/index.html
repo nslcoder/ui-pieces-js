@@ -9,16 +9,19 @@
   </head>
   <body>
     <div id="container">
-      <div id="progress-bar"></div>
+      <div id="progress-circle">
+        <div id="outer-circle">
+          <div id="inner-circle">
+            <span id="completed-percent">0%</span>
+          </div>
+        </div>
+      </div>
       <form>
-        <input type="text" placeholder="Add checklist" />
+        <input type="text" placeholder="Add an item" />
         <button>Submit</button>
       </form>
       <div id="checklist">
-        <ul>
-          <li><span>Email Jamuna.</span><input type="checkbox" /></li>
-          <li><span>Review the post.</span><input type="checkbox" /></li>
-        </ul>
+        <ul></ul>
       </div>
     </div>
     <script src="script.js"></script>

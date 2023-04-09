@@ -13,10 +13,9 @@ html {
 body {
   height: inherit;
   font-family: "Inter", sans-serif;
-  background-color: #01070a;
+  background-color: #28262b;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #container {
@@ -25,6 +24,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#progress-circle {
+  margin: 2em 0;
+}
+
+#outer-circle {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: conic-gradient(#4f4e52 0 360deg);
+}
+
+#inner-circle {
+  height: 9em;
+  width: 9em;
+  border-radius: 50%;
+  background-color: #28262b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#completed-percent {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 form {
