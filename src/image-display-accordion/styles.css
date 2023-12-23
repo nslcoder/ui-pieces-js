@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  padding: 1.25rem;
+  display: flex;
+  max-width: 700px;
+  color: rgb(27, 39, 37);
+  background-color: rgb(93, 211, 191);
+}
+
+#container > * {
+  width: 50%;
+  }
+
+.panel {
+  margin-bottom: 1.25rem;
+}
+
+.panel > .question {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.accordion-images {
+  height: 22.5rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.answer, img {
+  overflow: hidden;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  #container > * {
+    width: 100%;
+    }
+
+  .accordion-images {
+    display: none;
+  }
+}
